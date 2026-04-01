@@ -270,45 +270,7 @@ img{max-width:100%;display:block}
 .rv.vis{opacity:1;transform:none}
 .d1{transition-delay:.06s}.d2{transition-delay:.12s}.d3{transition-delay:.18s}.d4{transition-delay:.24s}.d5{transition-delay:.3s}.d6{transition-delay:.36s}
 
-/* ===== RESPONSIVE ===== */
-@media(max-width:1024px){
-  .hero__grid{grid-template-columns:1fr;text-align:center}
-  .hero__right{justify-content:center;margin-top:20px}
-  .hero__photo-wrap{max-width:320px}
-  .hero__bottom{flex-direction:column;align-items:center}
-  .hero__desc{margin:0 auto}
-  .hero__stats{justify-content:center}
-  .hero__title{font-size:clamp(3rem,7vw,5rem)}
-  .about .w{grid-template-columns:1fr;gap:48px}
-  .builds__grid{grid-template-columns:repeat(2,1fr)}
-  .skills .w{grid-template-columns:1fr;gap:48px}
-  .work__grid{grid-template-columns:1fr}
-  .pj--featured{grid-template-columns:1fr}
-  .contact .w{grid-template-columns:1fr}
-  .xp{grid-template-columns:1fr;gap:8px}
-}
 
-@media(max-width:768px){
-  .w{padding:0 20px}
-  .n__links{display:none}
-  .n__burger{display:flex}
-  .mob{display:flex}
-  .hero{padding-bottom:60px}
-  .hero .w{padding-top:100px}
-  .hero__title{font-size:2.8rem;letter-spacing:-2px}
-  .hero__photo-wrap{max-width:260px}
-  .hero__stats{flex-direction:column;gap:24px}
-  .builds__head{flex-direction:column;align-items:flex-start}
-  .builds__subtitle{text-align:left}
-  .builds__grid{grid-template-columns:1fr}
-  .tech-wall{grid-template-columns:repeat(2,1fr)}
-  .fg__row{grid-template-columns:1fr}
-  .exp__list .xp{padding:24px 20px}
-}
-@media(max-width:480px){
-  .hero__title{font-size:2.2rem;letter-spacing:-1px}
-  .hero__stat-val{font-size:2.2rem}
-}
 
 /* ===================================================
    PROJECT DETAIL MODAL
@@ -536,19 +498,7 @@ img{max-width:100%;display:block}
 .pm__media-placeholder i{font-size:1.5rem;opacity:.3}
 .pm__media-placeholder span{font-family:var(--mono);font-size:.7rem;letter-spacing:1px;opacity:.4}
 
-/* Responsive modal */
-@media(max-width:768px){
-  .pm{width:95%;max-width:none;border-radius:20px}
-  .pm__inner{padding:36px 24px}
-  .pm__details{flex-direction:column}
-  .pm__features-list{grid-template-columns:1fr}
-  .pm__gallery-grid{grid-template-columns:1fr;gap:10px}
-  .pm__media-slot{aspect-ratio:16/9}
-}
-@media(max-width:480px){
-  .pm__inner{padding:28px 18px}
-  .pm__title{font-size:1.8rem}
-}
+
 
 /* ===================================================
    HELPYY AI CHATBOT
@@ -759,56 +709,101 @@ img{max-width:100%;display:block}
 }
 
 /* Responsive for chatbot */
-@media(max-width:480px){
-  .helpyy{bottom:16px;right:16px}
-  .helpyy__window{width:calc(100vw - 32px);right:-12px;max-height:70vh;bottom:70px}
-  .helpyy__fab{width:54px;height:54px;font-size:1.2rem}
-}
-
 /* ===================================================
-   GLOBAL RESPONSIVENESS (MOBILE & TABLET)
+   MASTER RESPONSIVENESS (MOBILE & TABLET)
    =================================================== */
+
+/* Tablet & Smaller Laptops */
 @media (max-width: 1024px) {
   .hero__title { font-size: clamp(3rem, 6vw, 5rem); }
-  .hero__photo { transform: scale(3.5); }
+  .hero__photo { transform: scale(3.5); transform-origin: center right; }
   .work__grid, .builds__grid, .tech-wall { grid-template-columns: repeat(2, 1fr); }
   .skills .w, .about .w, .contact .w { gap: 40px; }
+  .hero__grid { gap: 20px; }
+  
+  /* Experience list adjustment */
+  .xp { grid-template-columns: 150px 1fr; gap: 24px; padding: 24px 32px; }
 }
 
+/* Mobile Devices & Small Tablets */
 @media (max-width: 768px) {
-  .hero .w { padding-top: 80px; }
-  .hero__grid { grid-template-columns: 1fr; gap: 60px; text-align: center; }
-  .hero__left { order: 1; display: flex; flex-direction: column; align-items: center; }
-  .hero__desc { text-align: center; }
-  .hero__sub { justify-content: center; }
-  .hero__btns { justify-content: center; }
-  .hero__stats { justify-content: center; gap: 32px; }
+  /* Layout Paddings */
+  .w { padding: 0 24px; }
+  .hero, .about, .builds, .skills, .work, .exp, .contact { padding: 80px 0; }
+  .hero { padding-bottom: 40px; }
   
-  /* Reset the photo for mobile stacking */
-  .hero__right { order: 2; height: 300px; align-items: center; }
-  .hero__photo-wrap { max-width: 100%; height: 100%; align-items: center; }
-  .hero__photo { 
-    transform: scale(1);
-    transform-origin: center;
-    max-height: 100%;
-    margin-top: 20px;
-  }
-  .hero__photo-wrap::before { top: 50%; left: 50%; transform: translate(-50%, -50%); width: 250px; height: 250px; }
-
-  /* Stack all grids on mobile */
-  .about .w, .skills .w, .contact .w { grid-template-columns: 1fr; }
-  .work__grid, .builds__grid, .tech-wall { grid-template-columns: 1fr; }
-  
-  .xp { grid-template-columns: 1fr; gap: 12px; padding: 24px; }
-  .xp__when { padding-top: 0; margin-bottom: 8px; }
-  
+  /* Navigation */
   .n__links { display: none; }
   .n__burger { display: flex; }
+  .mob { display: flex; }
+
+  /* Section Titles */
+  .contact__title, .work__title, .skills__title, .about__heading, .exp__title, .builds__title { font-size: 2.4rem; letter-spacing: -1px; }
+
+  /* Hero Redesign for Mobile stacking */
+  .hero .w { padding-top: 100px; display: flex; flex-direction: column; }
+  .hero__grid { display: flex; flex-direction: column-reverse; gap: 24px; text-align: center; }
+  
+  /* The Image perfectly scales now */
+  .hero__right { width: 100%; height: auto; display: flex; justify-content: center; align-items: center; margin-bottom: 24px; }
+  .hero__photo-wrap { max-width: 250px; width: 100%; aspect-ratio: 1; display: flex; justify-content: center; align-items: center; }
+  .hero__photo { 
+    transform: none; 
+    max-height: 350px; 
+    object-fit: contain; 
+    filter: grayscale(0.1) contrast(1.05); 
+  }
+  .hero__photo-wrap::before {
+    width: 200px; height: 200px; filter: blur(40px);
+  }
+
+  /* Hero Content */
+  .hero__left { display: flex; flex-direction: column; align-items: center; }
+  .hero__top { justify-content: center; }
+  .hero__title { font-size: 3.2rem; letter-spacing: -2px; }
+  .hero__sub { justify-content: center; }
+  .hero__btns { justify-content: center; width: 100%; flex-wrap: wrap; }
+  .hero__btn { width: 100%; justify-content: center; }
+  
+  /* Stats grid */
+  .hero__stats { flex-direction: row; flex-wrap: wrap; justify-content: center; gap: 32px; width: 100%; }
+  
+  /* Stack All Component Grids to 1 Column */
+  .about .w, .skills .w, .contact .w { grid-template-columns: 1fr; gap: 40px; }
+  .work__grid, .builds__grid, .tech-wall { grid-template-columns: 1fr; }
+  .fg__row { grid-template-columns: 1fr; gap: 12px; }
+  
+  /* Experience list single column */
+  .xp { grid-template-columns: 1fr; gap: 12px; padding: 24px; border-left: none; border-top: 3px solid transparent; }
+  .xp:hover { border-left-color: transparent; border-top-color: var(--accent); }
+  .xp__when { padding-top: 0; margin-bottom: 4px; }
+  
+  /* Project Modal Constraints */
+  .pm { width: 95%; max-width: none; border-radius: 20px; max-height: 80vh; }
+  .pm__inner { padding: 32px 20px; }
+  .pm__details { flex-direction: column; gap: 24px; }
+  .pm__features-list { grid-template-columns: 1fr; }
+  .pm__gallery-grid { grid-template-columns: 1fr; gap: 12px; }
+  .pm__media-slot { aspect-ratio: 16/10; }
+  .pm__close { top: 12px; right: 12px; width: 36px; height: 36px; }
+
+  /* Subtitle alignment */
+  .builds__head { flex-direction: column; align-items: flex-start; gap: 16px; margin-bottom: 40px; }
+  .builds__subtitle { text-align: left; max-width: 100%; }
 }
 
+/* Small Phones */
 @media (max-width: 480px) {
-  .hero__title { font-size: 2.8rem; }
-  .hero__stats { flex-direction: column; gap: 20px; }
-  .contact__title, .work__title, .skills__title, .about__heading, .exp__title, .builds__title { font-size: 2.2rem; }
-  .pj, .about__card, .cf { padding: 24px; }
+  .hero__title { font-size: 2.6rem; letter-spacing: -1.5px; }
+  .hero__stat-val { font-size: 2.4rem; }
+  .contact__title, .work__title, .skills__title, .about__heading, .exp__title, .builds__title { font-size: 2rem; }
+  
+  .pj, .about__card, .cf { padding: 24px 20px; }
+  .xp { padding: 20px; }
+  .pm__title { font-size: 1.8rem; }
+  
+  /* Chatbot Constraints */
+  .helpyy { bottom: 16px; right: 16px; }
+  .helpyy__window { width: calc(100vw - 32px); right: -12px; max-height: 65vh; bottom: 70px; }
+  .helpyy__fab { width: 54px; height: 54px; font-size: 1.2rem; }
 }
