@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+  <title>Mohammed Abuhdaib — Full-Stack Developer, Game Engineer & Designer</title>
+  <meta name="description"
+    content="Mohammed Abuhdaib — Full-stack developer specializing in Roblox game systems, Flutter apps, AI integration, and premium dark UI design. Based in Amman, Jordan." />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+</head>
+
+<body>
+
+  <!-- NAV -->
+  <nav class="n" id="nav">
+    <div class="w">
+      <a href="#" class="n__logo"><span class="n__logo-dot"></span> mohammed<span class="n__logo-dim">.dev</span></a>
+      <div class="n__links">
+        <a href="#about" class="n__a">About</a>
+        <a href="#builds" class="n__a">Services</a>
+        <a href="#work" class="n__a">Work</a>
+        <a href="#exp" class="n__a">Experience</a>
+        <a href="#contact" class="n__a n__a--cta">Let's Talk</a>
+      </div>
+      <button class="n__burger" aria-label="Menu"><span></span><span></span><span></span></button>
+    </div>
+  </nav>
+
+  <div class="mob" id="mob">
+    <button class="mob__x" aria-label="Close"><i class="fas fa-xmark"></i></button>
+    <a href="#about">About</a>
+    <a href="#builds">Services</a>
+    <a href="#work">Work</a>
+    <a href="#exp">Experience</a>
+    <a href="#contact">Contact</a>
+  </div>
+
+  <!-- HERO -->
+  <section class="hero" id="hero">
+    <div class="w hero__grid">
+      <div class="hero__left">
+        <div class="hero__top">
+          <div class="hero__avail"><span class="hero__avail-dot"></span> Available for projects</div>
+        </div>
+        <h1 class="hero__title">
+          <span class="hero__line"><span class="hw">Hey,</span> <span class="hw">I'm</span></span>
+          <span class="hero__line"><span class="hw hw--name accent-word">Mohammed</span></span>
+          <span class="hero__line"><span class="hw hw--name stroke">Abuhdaib</span></span>
+        </h1>
+        <p class="hero__sub">
+          <span class="hero__sub-role">Full-Stack Developer</span>
+          <span class="hero__sub-sep">·</span>
+          <span class="hero__sub-role">Game Engineer</span>
+          <span class="hero__sub-sep">·</span>
+          <span class="hero__sub-role">Manager</span>
+        </p>
+        <p class="hero__desc">
+          I build complete digital systems — from Roblox combat mechanics with physics-based knockback
+          to AI-powered desktop tools and production web apps. Based in <strong>Amman, Jordan</strong>,
+          currently Student at <strong>Zaha Cultural Center</strong>.
+        </p>
+        <div class="hero__btns">
+          <a href="#work" class="hero__btn hero__btn--fill">View My Work <i class="fas fa-arrow-down"></i></a>
+          <a href="#contact" class="hero__btn hero__btn--ghost">Get in Touch</a>
+        </div>
+        <div class="hero__stats">
+          <div>
+            <div class="hero__stat-val" data-target="6" data-suffix="+">0</div>
+            <div class="hero__stat-lbl">Projects</div>
+          </div>
+          <div>
+            <div class="hero__stat-val"><span class="green">+</span><span data-target="8">0</span></div>
+            <div class="hero__stat-lbl">Technologies</div>
+          </div>
+          <div>
+            <div class="hero__stat-val"><span class="green">+</span><span data-target="3">0</span></div>
+            <div class="hero__stat-lbl">Years</div>
+          </div>
+        </div>
+      </div>
+      <div class="hero__right">
+        <div class="hero__photo-wrap">
+          <img src="me.png" alt="Mohammed Abuhdaib — Developer" class="hero__photo" />
+        </div>
+      </div>
+    </div>
+    <div class="hero__scroll">
+      <div class="hero__scroll-line"></div>
+      Scroll
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- MARQUEE -->
+  <div class="marq">
+    <div class="marq__track">
+      <span class="marq__item"><i class="fas fa-gamepad"></i> Roblox Systems</span>
+      <span class="marq__item"><i class="fab fa-react"></i> React & Electron</span>
+      <span class="marq__item"><i class="fas fa-mobile-screen"></i> Flutter Apps</span>
+      <span class="marq__item"><i class="fas fa-robot"></i> AI Integration</span>
+      <span class="marq__item"><i class="fas fa-palette"></i> UI/UX Design</span>
+      <span class="marq__item"><i class="fab fa-laravel"></i> Laravel Backend</span>
+      <span class="marq__item"><i class="fas fa-cubes"></i> UEFN & Verse</span>
+      <span class="marq__item"><i class="fas fa-database"></i> MySQL</span>
+      <!-- duplicate -->
+      <span class="marq__item"><i class="fas fa-gamepad"></i> Roblox Systems</span>
+      <span class="marq__item"><i class="fab fa-react"></i> React & Electron</span>
+      <span class="marq__item"><i class="fas fa-mobile-screen"></i> Flutter Apps</span>
+      <span class="marq__item"><i class="fas fa-robot"></i> AI Integration</span>
+      <span class="marq__item"><i class="fas fa-palette"></i> UI/UX Design</span>
+      <span class="marq__item"><i class="fab fa-laravel"></i> Laravel Backend</span>
+      <span class="marq__item"><i class="fas fa-cubes"></i> UEFN & Verse</span>
+      <span class="marq__item"><i class="fas fa-database"></i> MySQL</span>
+    </div>
+  </div>
+
+  <!-- ABOUT -->
+  <section class="about" id="about">
+    <div class="w">
+      <div class="rv">
+        <div class="about__label">// About Mohammed</div>
+        <h2 class="about__heading">I don't build features.<br />I build <span style="color:var(--accent)">complete
+            systems</span>.</h2>
+        <p class="about__text">
+          I'm <strong>Mohammed Abuhdaib</strong> — a versatile Full-Stack Developer and Manager based at
+          <strong>Zaha Cultural Center</strong> in Amman, Jordan. I bridge administrative leadership with
+          technical innovation. By day I lead teams and coordinate student programs;
+          by night I engineer production-grade software.
+        </p>
+        <p class="about__text">
+          My work spans <em>Roblox game engines</em>, <em>React/Electron</em> desktop apps, <em>Flutter</em> mobile
+          apps,
+          and <em>AI-powered tools</em> — always with a dark-mode-first, <strong>Cyber-Premium</strong> design
+          philosophy.
+          I think in architectures, not scripts.
+        </p>
+      </div>
+
+      <div class="about__cards">
+        <div class="about__card rv d1">
+          <div class="about__card-top">
+            <div class="about__card-icon"><i class="fas fa-location-dot"></i></div>
+            <div class="about__card-title">Based in Amman, Jordan 🇯🇴</div>
+          </div>
+          <div class="about__card-text">Working at the intersection of management and engineering.</div>
+        </div>
+        <div class="about__card rv d2">
+          <div class="about__card-top">
+            <div class="about__card-icon"><i class="fas fa-moon"></i></div>
+            <div class="about__card-title">Cyber-Premium Aesthetic</div>
+          </div>
+          <div class="about__card-text">Dark mode by default. Vibrant accents. Fluid motion. Always.</div>
+        </div>
+        <div class="about__card rv d3">
+          <div class="about__card-top">
+            <div class="about__card-icon"><i class="fas fa-diagram-project"></i></div>
+            <div class="about__card-title">Systems Thinker</div>
+          </div>
+          <div class="about__card-text">I care about architecture, data flow, and edge cases — not just making things
+            work once.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- WHAT I BUILD -->
+  <section class="builds" id="builds">
+    <div class="w">
+      <div class="builds__head rv">
+        <div>
+          <div class="builds__label">// Services</div>
+          <h2 class="builds__title">What I Build</h2>
+        </div>
+        <p class="builds__subtitle">End-to-end systems across games, web, mobile, AI, and design.</p>
+      </div>
+
+      <div class="builds__grid">
+        <div class="build rv d1">
+          <span class="build__num">01</span>
+          <i class="fas fa-gamepad build__icon"></i>
+          <h3 class="build__name">Roblox Game Systems</h3>
+          <p class="build__desc">Combat mechanics, multiplayer sync, inventory & placement systems —
+            server-authoritative, exploit-resistant.</p>
+          <div class="build__tags">
+            <span class="build__tag">Luau</span>
+            <span class="build__tag">RemoteEvents</span>
+            <span class="build__tag">TweenService</span>
+          </div>
+        </div>
+        <div class="build rv d2">
+          <span class="build__num">02</span>
+          <i class="fas fa-desktop build__icon"></i>
+          <h3 class="build__name">Web & Desktop Apps</h3>
+          <p class="build__desc">Full-stack React/Vite web apps and Electron desktop tools with auto-update deployment.
+          </p>
+          <div class="build__tags">
+            <span class="build__tag">React</span>
+            <span class="build__tag">Electron</span>
+            <span class="build__tag">Vite</span>
+          </div>
+        </div>
+        <div class="build rv d3">
+          <span class="build__num">03</span>
+          <i class="fas fa-mobile-alt build__icon"></i>
+          <h3 class="build__name">Mobile Apps</h3>
+          <p class="build__desc">Cross-platform Flutter apps with proper state management and responsive tablet layouts.
+          </p>
+          <div class="build__tags">
+            <span class="build__tag">Flutter</span>
+            <span class="build__tag">Dart</span>
+            <span class="build__tag">Provider</span>
+          </div>
+        </div>
+        <div class="build rv d4">
+          <span class="build__num">04</span>
+          <i class="fas fa-robot build__icon"></i>
+          <h3 class="build__name">AI Integration</h3>
+          <p class="build__desc">Local LLM integration with Ollama & Qwen, Gemini API, smart assistants in production.
+          </p>
+          <div class="build__tags">
+            <span class="build__tag">Ollama</span>
+            <span class="build__tag">Gemini</span>
+            <span class="build__tag">LLMs</span>
+          </div>
+        </div>
+        <div class="build rv d5">
+          <span class="build__num">05</span>
+          <i class="fas fa-server build__icon"></i>
+          <h3 class="build__name">Backend Systems</h3>
+          <p class="build__desc">Laravel & Node.js backends with MySQL, migrations, seeding, and REST APIs.</p>
+          <div class="build__tags">
+            <span class="build__tag">Laravel</span>
+            <span class="build__tag">PHP</span>
+            <span class="build__tag">MySQL</span>
+          </div>
+        </div>
+        <div class="build rv d6">
+          <span class="build__num">06</span>
+          <i class="fas fa-palette build__icon"></i>
+          <h3 class="build__name">UI/UX Design</h3>
+          <p class="build__desc">Premium dark interfaces with glassmorphism, neon accents, and micro-animations.</p>
+          <div class="build__tags">
+            <span class="build__tag">Dark UI</span>
+            <span class="build__tag">Motion</span>
+            <span class="build__tag">Systems</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section class="skills" id="skills">
+    <div class="w">
+      <div>
+        <div class="rv">
+          <div class="skills__label">// Skills</div>
+          <h2 class="skills__title">Technical<br />Arsenal</h2>
+        </div>
+        <div class="rv d1">
+          <div class="sk">
+            <div class="sk__top"><span class="sk__name">Roblox / Luau</span><span class="sk__pct">92%</span></div>
+            <div class="sk__track">
+              <div class="sk__fill" data-w="92%"></div>
+            </div>
+          </div>
+          <div class="sk">
+            <div class="sk__top"><span class="sk__name">React / Electron / Vite</span><span class="sk__pct">85%</span>
+            </div>
+            <div class="sk__track">
+              <div class="sk__fill" data-w="85%"></div>
+            </div>
+          </div>
+          <div class="sk">
+            <div class="sk__top"><span class="sk__name">UI/UX Design</span><span class="sk__pct">88%</span></div>
+            <div class="sk__track">
+              <div class="sk__fill" data-w="88%"></div>
+            </div>
+          </div>
+          <div class="sk">
+            <div class="sk__top"><span class="sk__name">AI / LLM Integration</span><span class="sk__pct">80%</span>
+            </div>
+            <div class="sk__track">
+              <div class="sk__fill" data-w="80%"></div>
+            </div>
+          </div>
+          <div class="sk">
+            <div class="sk__top"><span class="sk__name">Flutter / Dart</span><span class="sk__pct">78%</span></div>
+            <div class="sk__track">
+              <div class="sk__fill" data-w="78%"></div>
+            </div>
+          </div>
+          <div class="sk">
+            <div class="sk__top"><span class="sk__name">Laravel / PHP / MySQL</span><span class="sk__pct">75%</span>
+            </div>
+            <div class="sk__track">
+              <div class="sk__fill" data-w="75%"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="rv d2">
+        <div class="tech-wall">
+          <div class="tw"><i class="fas fa-gamepad"></i> Roblox Studio</div>
+          <div class="tw"><i class="fab fa-react"></i> React</div>
+          <div class="tw"><i class="fas fa-bolt"></i> Vite</div>
+          <div class="tw"><i class="fas fa-atom"></i> Electron</div>
+          <div class="tw"><i class="fas fa-mobile-screen"></i> Flutter</div>
+          <div class="tw"><i class="fab fa-node-js"></i> Node.js</div>
+          <div class="tw"><i class="fab fa-laravel"></i> Laravel</div>
+          <div class="tw"><i class="fas fa-database"></i> MySQL</div>
+          <div class="tw"><i class="fas fa-robot"></i> AI / LLMs</div>
+          <div class="tw"><i class="fab fa-git-alt"></i> Git</div>
+          <div class="tw"><i class="fas fa-cubes"></i> UEFN / Verse</div>
+          <div class="tw"><i class="fas fa-palette"></i> UI/UX</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- WORK -->
+  <section class="work" id="work">
+    <div class="w">
+      <div class="work__head rv">
+        <div class="work__label">// Selected Work</div>
+        <h2 class="work__title">Featured Projects</h2>
+      </div>
+
+      <!-- Cards generated dynamically from content.js -->
+      <div class="work__grid" id="workGrid"></div>
+    </div>
+  </section>
+
+  <!-- PROJECT DETAIL MODAL -->
+  <div class="pm-overlay" id="pmOverlay">
+    <div class="pm" id="pmModal">
+      <button class="pm__close" id="pmClose" aria-label="Close"><i class="fas fa-xmark"></i></button>
+      <div class="pm__inner">
+        <div class="pm__header">
+          <span class="pm__num" id="pmNum">/01</span>
+          <div class="pm__tags" id="pmTags"></div>
+        </div>
+        <h2 class="pm__title" id="pmTitle">Project Name</h2>
+        <p class="pm__desc" id="pmDesc">Project description goes here.</p>
+
+        <div class="pm__details">
+          <div class="pm__detail">
+            <span class="pm__detail-label">Role</span>
+            <span class="pm__detail-value" id="pmRole">Developer</span>
+          </div>
+          <div class="pm__detail">
+            <span class="pm__detail-label">Year</span>
+            <span class="pm__detail-value" id="pmYear">2025</span>
+          </div>
+          <div class="pm__detail">
+            <span class="pm__detail-label">Status</span>
+            <span class="pm__detail-value" id="pmStatus">Active</span>
+          </div>
+        </div>
+
+        <div class="pm__features">
+          <h3 class="pm__features-title">Key Features</h3>
+          <ul class="pm__features-list" id="pmFeatures"></ul>
+        </div>
+
+        <div class="pm__gallery">
+          <h3 class="pm__gallery-title">Gallery</h3>
+          <div class="pm__gallery-grid" id="pmGallery">
+            <div class="pm__media-slot">
+              <div class="pm__media-placeholder"><i class="fas fa-image"></i><span>Media 1</span></div>
+            </div>
+            <div class="pm__media-slot">
+              <div class="pm__media-placeholder"><i class="fas fa-image"></i><span>Media 2</span></div>
+            </div>
+            <div class="pm__media-slot">
+              <div class="pm__media-placeholder"><i class="fas fa-image"></i><span>Media 3</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- EXPERIENCE -->
+  <section class="exp" id="exp">
+    <div class="w">
+      <div class="exp__head rv">
+        <div class="exp__label">// Journey</div>
+        <h2 class="exp__title">Experience</h2>
+      </div>
+
+      <div class="exp__list">
+        <div class="xp rv d1">
+          <div class="xp__when">Now</div>
+          <div>
+            <div class="xp__role">Manager & Lead Developer</div>
+            <div class="xp__place">Zaha Cultural Center — Amman, Jordan</div>
+            <div class="xp__text">Leading instructional teams and student programs while developing the Zaha Manager
+              desktop application. Solving real workplace problems with code.</div>
+          </div>
+        </div>
+        <div class="xp rv d2">
+          <div class="xp__when">Ongoing</div>
+          <div>
+            <div class="xp__role">Full-Stack Developer</div>
+            <div class="xp__place">Freelance — Web, Desktop & AI</div>
+            <div class="xp__text">React/Vite web apps, Electron desktop tools with auto-update, AI assistants using
+              Ollama & Gemini API, Laravel backends with MySQL.</div>
+          </div>
+        </div>
+        <div class="xp rv d3">
+          <div class="xp__when">Ongoing</div>
+          <div>
+            <div class="xp__role">Game Systems Engineer</div>
+            <div class="xp__place">Roblox & UEFN</div>
+            <div class="xp__text">Combat mechanics with physics-based knockback, multiplayer server-authoritative
+              architecture, inventory systems, Fortnite Creative design with Verse.</div>
+          </div>
+        </div>
+        <div class="xp rv d4">
+          <div class="xp__when">Ongoing</div>
+          <div>
+            <div class="xp__role">Mobile Developer</div>
+            <div class="xp__place">Flutter / Dart</div>
+            <div class="xp__text">Cross-platform apps with Provider state management, SharedPreferences, and responsive
+              layouts for phones and tablets.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- CONTACT -->
+  <section class="contact" id="contact">
+    <div class="w">
+      <div class="rv">
+        <div class="contact__label">// Contact</div>
+        <h2 class="contact__title">Let's build<br />something <span style="color:var(--accent)">real</span>.</h2>
+        <p class="contact__desc">Got a project in mind? A game idea? An app concept? I'm Mohammed — always open to new
+          challenges and collaborations.</p>
+        <div class="contact__links">
+          <div class="cl">
+            <div class="cl__icon"><i class="fas fa-envelope"></i></div>
+            <div>
+              <div class="cl__lbl">Email</div>
+              <div class="cl__val">hello@portfolio.dev</div>
+            </div>
+          </div>
+          <div class="cl">
+            <div class="cl__icon"><i class="fas fa-location-dot"></i></div>
+            <div>
+              <div class="cl__lbl">Location</div>
+              <div class="cl__val">Amman, Jordan</div>
+            </div>
+          </div>
+          <div class="cl">
+            <div class="cl__icon"><i class="fas fa-circle-check"></i></div>
+            <div>
+              <div class="cl__lbl">Status</div>
+              <div class="cl__val">Open for projects</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <form id="cf" class="cf rv d2">
+        <h3 class="cf__title">Send a message</h3>
+        <div class="fg__row">
+          <div class="fg"><label class="fg__l">Name</label><input class="fg__i" type="text" placeholder="Your name"
+              required /></div>
+          <div class="fg"><label class="fg__l">Email</label><input class="fg__i" type="email"
+              placeholder="you@email.com" required /></div>
+        </div>
+        <div class="fg"><label class="fg__l">Subject</label><input class="fg__i" type="text"
+            placeholder="Project idea, collaboration..." /></div>
+        <div class="fg"><label class="fg__l">Message</label><textarea class="fg__t"
+            placeholder="Tell me about your project..." required></textarea></div>
+        <button type="submit" class="cf__btn">Send Message <i class="fas fa-arrow-right"></i></button>
+      </form>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="ft">
+    <div class="w">
+      <p class="ft__copy">© 2026 Mohammed Abuhdaib — Built with <span>intention</span>.</p>
+      <div class="ft__soc">
+        <a href="#" class="ft__s" aria-label="GitHub"><i class="fab fa-github"></i></a>
+        <a href="#" class="ft__s" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+        <a href="#" class="ft__s" aria-label="Twitter"><i class="fab fa-x-twitter"></i></a>
+        <a href="#" class="ft__s" aria-label="Discord"><i class="fab fa-discord"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <button class="top-btn" id="toTop" aria-label="Top"><i class="fas fa-arrow-up"></i></button>
+
+  <!-- HELPYY AI CHATBOT -->
+  <div class="helpyy" id="helpyy">
+    <!-- Floating Toggle Button -->
+    <button class="helpyy__fab" id="helpyyFab" aria-label="Open Helpyy AI">
+      <span class="helpyy__fab-pulse"></span>
+      <i class="fas fa-robot helpyy__fab-icon" id="helpyyFabIcon"></i>
+    </button>
+
+    <!-- Chat Window -->
+    <div class="helpyy__window" id="helpyyWindow">
+      <!-- Header -->
+      <div class="helpyy__header">
+        <div class="helpyy__header-left">
+          <div class="helpyy__avatar">
+            <i class="fas fa-robot"></i>
+            <span class="helpyy__status-dot"></span>
+          </div>
+          <div>
+            <div class="helpyy__name">Helpyy</div>
+            <div class="helpyy__tagline">Mohammed's AI Assistant</div>
+          </div>
+        </div>
+        <div class="helpyy__header-actions">
+          <button class="helpyy__clear" id="helpyyClear" title="Clear chat"><i class="fas fa-trash-can"></i></button>
+          <button class="helpyy__close" id="helpyyClose" aria-label="Close"><i class="fas fa-xmark"></i></button>
+        </div>
+      </div>
+
+      <!-- Messages -->
+      <div class="helpyy__messages" id="helpyyMessages">
+        <div class="helpyy__welcome">
+          <div class="helpyy__welcome-icon"><i class="fas fa-robot"></i></div>
+          <div class="helpyy__welcome-title">Hey! I'm <span>Helpyy</span> 👋</div>
+          <div class="helpyy__welcome-text">Mohammed's personal AI assistant. Ask me anything about his skills,
+            projects, experience, or how to get in touch!</div>
+          <div class="helpyy__suggestions" id="helpyySuggestions">
+            <button class="helpyy__suggest" data-q="What skills does Mohammed have?">💡 Skills & Tech</button>
+            <button class="helpyy__suggest" data-q="Tell me about Mohammed's projects">🚀 Projects</button>
+            <button class="helpyy__suggest" data-q="Where is Mohammed based?">📍 Location</button>
+            <button class="helpyy__suggest" data-q="How can I hire Mohammed?">🤝 Hire Me</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Input -->
+      <div class="helpyy__input-area">
+        <div class="helpyy__input-wrap">
+          <input type="text" class="helpyy__input" id="helpyyInput" placeholder="Ask Helpyy anything..."
+            autocomplete="off" />
+          <button class="helpyy__send" id="helpyySend" aria-label="Send"><i class="fas fa-paper-plane"></i></button>
+        </div>
+        <div class="helpyy__powered">Powered by Gemini AI</div>
+      </div>
+    </div>
+  </div>
+
+  <script src="content.js"></script>
+  <script src="script.js"></script>
+  <script src="helpyy.js"></script>
+</body>
+
+</html>
