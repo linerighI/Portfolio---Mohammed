@@ -4,9 +4,9 @@
 
 (() => {
   // ── CONFIG ──
-  // The frontend now talks securely to our Node.js proxy server.
-  // The Gemini API key is safely hidden inside the server's .env file.
-  const API_URL = 'http://localhost:3000/api/chat';
+  // The frontend now talks securely to our Netlify Serverless Function!
+  // The Gemini API key is safely hidden in Netlify's Environment Variables.
+  const API_URL = '/api/chat';
 
   // ── MOHAMMED'S KNOWLEDGE BASE ──
   const KNOWLEDGE = `
