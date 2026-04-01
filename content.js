@@ -277,7 +277,7 @@ const SITE = {
     email: 'lineright123@gmail.com',
     location: 'Amman, Jordan',
     status: 'Open for projects',
-    web3formsKey: 'YOUR_ACCESS_KEY_HERE' // Get your free key at web3forms.com
+    web3formsKey: '16070136-7d6e-4e30-bc39-541576309c49' // Web3Forms Access Key
   },
 
   // ─────────────────────────────────────────────
