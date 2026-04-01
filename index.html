@@ -476,15 +476,11 @@
       <form id="cf" class="cf rv d2">
         <h3 class="cf__title">Send a message</h3>
         <div class="fg__row">
-          <div class="fg"><label class="fg__l">Name</label><input class="fg__i" type="text" placeholder="Your name"
-              required /></div>
-          <div class="fg"><label class="fg__l">Email</label><input class="fg__i" type="email"
-              placeholder="you@email.com" required /></div>
+          <div class="fg"><label class="fg__l">Name</label><input name="name" class="fg__i" type="text" placeholder="Your name" required /></div>
+          <div class="fg"><label class="fg__l">Email</label><input name="email" class="fg__i" type="email" placeholder="you@email.com" required /></div>
         </div>
-        <div class="fg"><label class="fg__l">Subject</label><input class="fg__i" type="text"
-            placeholder="Project idea, collaboration..." /></div>
-        <div class="fg"><label class="fg__l">Message</label><textarea class="fg__t"
-            placeholder="Tell me about your project..." required></textarea></div>
+        <div class="fg"><label class="fg__l">Subject</label><input name="subject" class="fg__i" type="text" placeholder="Project idea, collaboration..." /></div>
+        <div class="fg"><label class="fg__l">Message</label><textarea name="message" class="fg__t" placeholder="Tell me about your project..." required></textarea></div>
         <button type="submit" class="cf__btn">Send Message <i class="fas fa-arrow-right"></i></button>
       </form>
     </div>

@@ -276,7 +276,8 @@ const SITE = {
     description: "Got a project in mind? A game idea? An app concept? I'm Mohammed — always open to new challenges and collaborations.",
     email: 'lineright123@gmail.com',
     location: 'Amman, Jordan',
-    status: 'Open for projects'
+    status: 'Open for projects',
+    web3formsKey: 'YOUR_ACCESS_KEY_HERE' // Get your free key at web3forms.com
   },
 
   // ─────────────────────────────────────────────

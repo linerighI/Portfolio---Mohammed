@@ -76,13 +76,53 @@ window.addEventListener('scroll', () => {
 // ===== FORM =====
 const form = document.getElementById('cf');
 if (form) {
-  form.addEventListener('submit', e => {
+  form.addEventListener('submit', async e => {
     e.preventDefault();
     const btn = form.querySelector('.cf__btn');
     const orig = btn.innerHTML;
-    btn.innerHTML = '<i class="fas fa-check"></i> Sent!';
-    btn.style.background = '#22c55e';
-    setTimeout(() => { btn.innerHTML = orig; btn.style.background = ''; form.reset(); }, 2500);
+
+    // Web3Forms Integration
+    if (!SITE || !SITE.contact || !SITE.contact.web3formsKey || SITE.contact.web3formsKey === 'YOUR_ACCESS_KEY_HERE') {
+      alert('Please add your Web3Forms Access Key to content.js to enable the contact form.');
+      return;
+    }
+
+    btn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Sending...';
+    btn.disabled = true;
+
+    try {
+      const formData = new FormData(form);
+      formData.append('access_key', SITE.contact.web3formsKey);
+
+      const response = await fetch('https://api.web3forms.com/submit', {
+        method: 'POST',
+        body: formData
+      });
+
+      const data = await response.json();
+
+      if (data.success) {
+        btn.innerHTML = '<i class="fas fa-check"></i> Sent!';
+        btn.style.background = '#22c55e';
+        setTimeout(() => { 
+          btn.innerHTML = orig; 
+          btn.style.background = ''; 
+          btn.disabled = false;
+          form.reset(); 
+        }, 3000);
+      } else {
+        throw new Error(data.message || 'Submission failed');
+      }
+    } catch (error) {
+      console.error('Form Submission Error:', error);
+      btn.innerHTML = '<i class="fas fa-xmark"></i> Error';
+      btn.style.background = '#ef4444';
+      setTimeout(() => { 
+        btn.innerHTML = orig; 
+        btn.style.background = ''; 
+        btn.disabled = false;
+      }, 3000);
+    }
   });
 }
 
