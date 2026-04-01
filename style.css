@@ -764,3 +764,51 @@ img{max-width:100%;display:block}
   .helpyy__window{width:calc(100vw - 32px);right:-12px;max-height:70vh;bottom:70px}
   .helpyy__fab{width:54px;height:54px;font-size:1.2rem}
 }
+
+/* ===================================================
+   GLOBAL RESPONSIVENESS (MOBILE & TABLET)
+   =================================================== */
+@media (max-width: 1024px) {
+  .hero__title { font-size: clamp(3rem, 6vw, 5rem); }
+  .hero__photo { transform: scale(3.5); }
+  .work__grid, .builds__grid, .tech-wall { grid-template-columns: repeat(2, 1fr); }
+  .skills .w, .about .w, .contact .w { gap: 40px; }
+}
+
+@media (max-width: 768px) {
+  .hero .w { padding-top: 80px; }
+  .hero__grid { grid-template-columns: 1fr; gap: 60px; text-align: center; }
+  .hero__left { order: 1; display: flex; flex-direction: column; align-items: center; }
+  .hero__desc { text-align: center; }
+  .hero__sub { justify-content: center; }
+  .hero__btns { justify-content: center; }
+  .hero__stats { justify-content: center; gap: 32px; }
+  
+  /* Reset the photo for mobile stacking */
+  .hero__right { order: 2; height: 300px; align-items: center; }
+  .hero__photo-wrap { max-width: 100%; height: 100%; align-items: center; }
+  .hero__photo { 
+    transform: scale(1);
+    transform-origin: center;
+    max-height: 100%;
+    margin-top: 20px;
+  }
+  .hero__photo-wrap::before { top: 50%; left: 50%; transform: translate(-50%, -50%); width: 250px; height: 250px; }
+
+  /* Stack all grids on mobile */
+  .about .w, .skills .w, .contact .w { grid-template-columns: 1fr; }
+  .work__grid, .builds__grid, .tech-wall { grid-template-columns: 1fr; }
+  
+  .xp { grid-template-columns: 1fr; gap: 12px; padding: 24px; }
+  .xp__when { padding-top: 0; margin-bottom: 8px; }
+  
+  .n__links { display: none; }
+  .n__burger { display: flex; }
+}
+
+@media (max-width: 480px) {
+  .hero__title { font-size: 2.8rem; }
+  .hero__stats { flex-direction: column; gap: 20px; }
+  .contact__title, .work__title, .skills__title, .about__heading, .exp__title, .builds__title { font-size: 2.2rem; }
+  .pj, .about__card, .cf { padding: 24px; }
+}
